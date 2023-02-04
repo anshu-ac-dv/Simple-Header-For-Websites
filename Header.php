@@ -1,71 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <style>
-      * {box-sizing: border-box;}
-body {
-margin: 0;
-font-family: Arial;
-}
-.header {
-overflow: hidden;
-background-color: black;
-padding: 10px 10px;
-}
-.header a {
-float: left;
-color: white;
-text-align: center;
-padding: 12px;
-text-decoration: none;
-font-size: 15px;
-line-height: 25px;
-border-radius: 5px;
-}
-.headera.logo {
-font-size: 25px;
-font-weight: bold;
-}
-.header a:hover {
-background-color: red;
-color: black;
-}
-.headera.active {
-background-color: green;
-color: white;
-}
-.header-right {
-float: right;
-}
-@media screen and (max-width: 500px) {
-.header a {
-float: none;
-display: block;
-text-align: left;
-}
-.header-right {
-float: none;
-}
-}
-    </style>
- 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+    <nav class="navbar shadow navbar-expand-sm navbar-light bg-lg p-3 fixed">
+      <a href="#" class="navbar-brand ms-3">Welcome</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active"><a href="Dashboard.php" class="nav-link">Dashboard</a></li>
+        <li class="nav-item"><a href="UpdateProfile.php" class="nav-link">Update-Profile</a></li>
+        <li class="nav-item"><a href="Attendance.php" class="nav-link">Attendance</a></li>
+        <li class="nav-item"><a href="Leave.php" class="nav-link">Apply-For-Leave</a></li>
+        <a href="Logout.php"><button type="button" class="btn btn-info">Logout</button></a>
+      </ul>
+      <hr>
+    </nav>
 
-
-<div class="header">
-<div class="container">
-<a href="#default" class="logo">Hezard</a>
-<div class="header-right">
-<a class="active" href="#home">Home</a>
-<a href="#contact">Blog</a>
-<a href="#contact">Articles</a>
-<a href="#about">About Us</a>
-<a href="#about">Contact Us</a>
-</div>
-</div>
-</div>
-</body>
+  </body>
 </html>
